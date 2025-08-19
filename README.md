@@ -1,30 +1,41 @@
-# FUTURE INTERNS CYBER SECURITY REPORT
+# FUTURE_CS_01 – Web Application Security Testing 🔐
 
-## Task 4: Vulnerability Assessment Report  
-As part of my Cyber Security Internship at Future Interns, I conducted an in-depth Vulnerability Assessment to identify potential security flaws, analyze risks, and recommend effective countermeasures.
+This repository contains Task 1 for my Cyber Security Internship with [Future Interns](https://futureinterns.com).  
+The objective of this task is to identify and report common web application vulnerabilities.
 
-## Key Highlights of the Assessment  
-**Security Scanning** – Used OWASP ZAP, Burp Suite, and Nmap to detect vulnerabilities.  
-**Threat Analysis** – Investigated SQL Injection, XSS, IDOR, and security misconfigurations.  
-**Network Security Review** – Evaluated exposed services, weak authentication, and open ports.  
-**Remediation Planning** – Proposed MFA enforcement, secure coding, WAF integration, and penetration testing.
+## 🔍 Task Objective
+Perform security testing on a vulnerable web application to identify:
+- SQL Injection
+- Cross Site Scripting (XSS)
+- Authentication Flaws
 
-## Tools Used  
-**OWASP ZAP** – Identified web vulnerabilities like SQL Injection and XSS.  
-**Burp Suite** – Analyzed session hijacking, authentication weaknesses, and open redirects.  
-**Nmap** – Scanned network services to detect open ports and database exposure risks.
+## 🛠 Tools Used
+- Manual testing via web browser
+- Target: [OWASP Juice Shop](https://demo.owasp-juice.shop)
 
-## Skills Developed  
-**Security Scanning & Testing** – Hands-on experience with automated and manual vulnerability analysis.  
-**Threat Impact Assessment** – Evaluated risks and their potential impact on systems and data.  
-**Cybersecurity Best Practices** – Recommended secure authentication, encryption, and firewalls.  
-**Incident Prevention Strategies** – Strengthened security posture through patching and monitoring.
+## ✅ Vulnerabilities Tested
 
-## Why This Project Matters  
-Cybersecurity threats are constantly evolving, making vulnerability assessments essential in safeguarding digital assets. Through this project, Future Interns gain:  
-- Real-world exposure to penetration testing and risk assessment.  
-- Critical thinking in identifying and mitigating cyber threats.  
-- Experience in network security and secure application development.
+### 1. SQL Injection
+- **Payload Used:** `' OR 1=1--`
+- **Result:** Login bypass successful
+- **Screenshot:** `sqli_screenshot.png`
 
-## Conclusion  
-The Vulnerability Assessment Report provided valuable hands-on experience in analyzing system weaknesses, improving security controls, and implementing proactive defense strategies. By continuously enhancing security measures, organizations can significantly reduce cyber risks and ensure a safer digital environment.
+### 2. XSS (Cross Site Scripting)
+- **Payload Used:** `<script>alert("XSS")</script>`
+- **Result:** Attempted via Feedback form
+- **Screenshot:** `xss_screenshot.png`
+
+### 3. Authentication Flaws
+- **Tested With:** Default/breached credentials (`admin@juice-sh.op`)
+- **Result:** Successful login triggered Google warning
+- **Screenshot:** `auth_flaw_screenshot.png`
+
+## 📄 Report
+See [`Security_Report_Task1.md`](./Security_Report_Task1.md) for full details.
+
+---
+
+## 🌐 Connect with Me
+- 🔗 [LinkedIn](https://www.linkedin.com/in/lokeshindala)
+- 📫 lokeshindala@gmail.com
+
